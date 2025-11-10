@@ -1,0 +1,186 @@
+================================================================================
+E-COMMERCE WEBSITE MVP - COMPLETE DEVELOPMENT PROMPT
+================================================================================
+
+ROLE:
+You are a Full Stack Developer. Build a complete MVP for an E-Commerce Website 
+using Django for the backend and React for the frontend.
+
+================================================================================
+TASK:
+================================================================================
+
+Create a minimal viable e-commerce website that enables users to:
+- Browse and explore products
+- View individual product details
+- Add and remove products from a shopping cart
+- Handle basic product CRUD operations (admin access)
+- Search and filter products
+- User authentication (login/register/logout)
+- Wishlist functionality
+- Product reviews and ratings
+
+Focus on: Clean UI, modular architecture, and smooth integration between 
+frontend and backend.
+
+================================================================================
+TECH STACK:
+================================================================================
+
+FRONTEND:
+- Framework: React.js 18.2.0
+- Routing: React Router DOM 6.11.0
+- State Management: React Context API
+- HTTP Client: Axios 1.4.0
+- Styling: CSS3 (Custom responsive design)
+
+BACKEND:
+- Framework: Django 5.2.8
+- API Framework: Django REST Framework 3.16.1
+- Database: SQLite (for MVP)
+- Authentication: Token-based (Django REST Framework)
+- CORS: Django CORS Headers 4.9.0
+
+API COMMUNICATION:
+- REST API with JSON
+- Token authentication
+- CORS enabled for cross-origin requests
+
+
+================================================================================
+FRONTEND (REACT):
+================================================================================
+
+FEATURES IMPLEMENTED:
+
+1. PRODUCT BROWSING
+   - Grid layout with product cards
+   - Product images, names, prices
+   - Stock availability display
+   - Click to view details
+
+2. SEARCH FUNCTIONALITY
+   - Search bar on homepage
+   - Real-time search results
+   - Search by name or description
+
+3. ADVANCED FILTERS
+   - Price range filter (min/max)
+   - In-stock only filter
+   - Collapsible filter panel
+   - Clear filters button
+
+4. SORTING OPTIONS
+   - Sort by newest first
+   - Sort by price (low to high)
+   - Sort by price (high to low)
+   - Sort by name (A-Z)
+
+5. SHOPPING CART
+   - Add products with quantity
+   - View all cart items
+   - Update quantities
+   - Remove items
+   - Cart badge with count
+   - Total price calculation
+
+6. USER AUTHENTICATION
+   - Register new account
+   - Login with username/password
+   - Logout functionality
+   - Token-based auth
+   - User info in navbar
+
+7. WISHLIST
+   - Add products to wishlist
+   - View wishlist page
+   - Remove from wishlist
+   - Requires authentication
+
+8. PRODUCT REVIEWS
+   - View all reviews
+   - Write reviews with ratings
+   - Star rating display
+   - Average rating calculation
+   - Requires authentication
+
+
+================================================================================
+INTEGRATION STEPS:
+================================================================================
+
+STEP 1: BACKEND SETUP
+1. Install Django and dependencies
+2. Create Django project and apps
+3. Define models and migrations
+4. Create serializers
+5. Implement views and viewsets
+6. Configure URLs
+7. Enable CORS
+8. Add sample data
+
+STEP 2: FRONTEND SETUP
+1. Create React app
+2. Install dependencies
+3. Set up routing
+4. Create context providers
+5. Build components
+6. Style with CSS
+
+================================================================================
+DEVELOPMENT PROMPTS USED:
+================================================================================
+
+BACKEND DEVELOPMENT:
+1. "Create Django models and serializers for Product and CartItem with REST 
+   endpoints."
+2. "Implement Django REST API views and URLs for product listing, details, 
+   and cart management."
+3. "Configure CORS in Django to allow React frontend."
+4. "Add user authentication with token-based auth in Django REST Framework."
+5. "Create Review and Wishlist models with serializers and views."
+6. "Implement search, filter, and sorting for products API."
+7. "Add pagination to product listing API."
+8. "Create UserProfile model with signals for auto-creation."
+
+FRONTEND DEVELOPMENT:
+9. "Build a React ProductList component fetching products from backend API."
+10. "Create a ProductDetail component with an Add to Cart button."
+11. "Implement Cart component showing added items, quantity, and total price."
+12. "Use React Router to navigate between Home, Product Details, and Cart pages."
+13. "Add a Navbar with a Cart icon showing item count using Context API."
+14. "Create SearchBar component with filters and sorting."
+15. "Implement AuthContext for user authentication state management."
+16. "Build AuthModal component for login and registration."
+17. "Create Wishlist page for authenticated users."
+18. "Add product review functionality with rating and comments."
+19. "Style all components with responsive CSS."
+20. "Fix cartItems.reduce error by ensuring array type."
+
+================================================================================
+DELIVERABLES:
+================================================================================
+
+DOCUMENTATION FILES:
+1. README.md - Setup instructions and overview
+2. FEATURES.md - Complete feature documentation
+3. QUICK_START.md - Quick start guide
+4. TESTING_GUIDE.md - Testing procedures
+5. STATUS_REPORT.md - System status report
+6. technical_architecture.md - Architecture documentation
+7. copilot_prompts.txt - List of prompts used
+8. PROMPT.md - Comprehensive prompt document
+9. PROMPT.txt - Text version of prompt
+
+CODE DELIVERABLES:
+1. Complete Django backend with all apps
+2. Complete React frontend with all components
+3. Database migrations
+4. Sample data script
+5. Requirements files
+6. Git repository with clean history
+
+
+
+
+
