@@ -19,9 +19,11 @@ export const CartProvider = ({ children }) => {
     try {
       setLoading(true);
       const response = await getCart();
-      setCartItems(response.data);
+      // Ensure cartItems is always an array
+      setCartItems(Array.isArray(response.data) ? response.data : []);
     } catch (error) {
       console.error('Error fetching cart:', error);
+      setCartItems([]);
     } finally {
       setLoading(false);
     }
@@ -51,8 +53,8 @@ export const CartProvider = ({ children }) => {
     }
   };
 
-  const cartCount = cartItems.reduce((total, item) => total + item.quantity, 0);
-  const cartTotal = cartItems.reduce((total, item) => total + parseFloat(item.total_price), 0);
+  const cartCount = Array.isArray(cartItems) ? cartItems.reduce((total, item) => total + item.quantity, 0) : 0;
+  const cartTotal = Array.isArray(cartItems) ? cartItems.reduce((total, item) => total + parseFloat(item.total_price), 0) : 0;
 
   return (
     <CartContext.Provider

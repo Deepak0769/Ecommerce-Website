@@ -9,7 +9,7 @@ const Cart = () => {
     return <div className="cart-loading">Loading cart...</div>;
   }
 
-  if (cartItems.length === 0) {
+  if (!Array.isArray(cartItems) || cartItems.length === 0) {
     return (
       <div className="empty-cart">
         <h2>Your cart is empty</h2>
