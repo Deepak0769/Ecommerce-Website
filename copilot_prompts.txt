@@ -1,0 +1,113 @@
+# Copilot Prompts Used for E-Commerce MVP
+
+## Backend Development Prompts
+
+1. "Create Django models for Product with fields: name, description, price, image_url, stock, created_at, updated_at"
+
+2. "Create Django model for CartItem with session_id, product foreign key, quantity, and computed total_price property"
+
+3. "Implement ProductSerializer using Django REST Framework with all product fields"
+
+4. "Create CartItemSerializer with nested ProductSerializer and computed total_price field"
+
+5. "Implement ProductViewSet with ModelViewSet for full CRUD operations"
+
+6. "Create CartViewSet with custom actions for add, remove, and clear cart operations"
+
+7. "Configure Django settings.py with REST Framework, CORS headers, and SQLite database"
+
+8. "Set up URL routing for /api/products/ and /api/cart/ endpoints"
+
+9. "Create Django admin configuration for Product and CartItem models"
+
+10. "Configure CORS to allow requests from http://localhost:3000"
+
+## Frontend Development Prompts
+
+11. "Create React Context for cart state management with add, remove, and fetch operations"
+
+12. "Build ProductList component displaying products in responsive grid with Link to details"
+
+13. "Create ProductDetail component with image, description, quantity selector, and add to cart button"
+
+14. "Implement Cart component showing cart items with remove functionality and total calculation"
+
+15. "Build Navbar component with logo, navigation links, and cart badge showing item count"
+
+16. "Create HomePage that fetches and displays products using ProductList component"
+
+17. "Implement ProductPage that fetches single product and renders ProductDetail"
+
+18. "Build CartPage that displays Cart component with all cart items"
+
+19. "Set up React Router with routes for home, product details, and cart pages"
+
+20. "Create API service layer with Axios for all backend API calls"
+
+21. "Implement session ID generation and storage in localStorage"
+
+22. "Add loading and error states to all data fetching components"
+
+23. "Style ProductList with CSS grid and hover effects"
+
+24. "Style ProductDetail with two-column layout and responsive design"
+
+25. "Style Cart with item cards, quantity display, and checkout button"
+
+26. "Style Navbar with flexbox, cart badge, and responsive design"
+
+27. "Create global CSS with reset, typography, and button styles"
+
+28. "Add placeholder images for products without image URLs"
+
+29. "Implement quantity validation in ProductDetail component"
+
+30. "Add success/error messages for cart operations"
+
+## Integration Prompts
+
+31. "Connect React frontend to Django backend using Axios with base URL configuration"
+
+32. "Implement session-based cart management across frontend and backend"
+
+33. "Add error handling for failed API requests in React components"
+
+34. "Configure proxy in React for development to avoid CORS issues"
+
+35. "Test end-to-end flow: browse products → view details → add to cart → view cart"
+
+## Documentation Prompts
+
+36. "Write comprehensive README with setup instructions for Django and React"
+
+37. "Document all API endpoints with request/response examples"
+
+38. "Create technical architecture document explaining system design and data flow"
+
+39. "Document data models with field descriptions and relationships"
+
+40. "Explain session management strategy for cart functionality"
+
+## Testing & Debugging Prompts
+
+41. "Add console logging for debugging API calls and state updates"
+
+42. "Implement try-catch blocks for all async operations"
+
+43. "Add loading spinners for async data fetching"
+
+44. "Validate product stock before allowing add to cart"
+
+45. "Handle edge cases: empty cart, out of stock, invalid product ID"
+
+## Styling & UX Prompts
+
+46. "Add smooth transitions and hover effects to interactive elements"
+
+47. "Implement responsive design for mobile, tablet, and desktop"
+
+48. "Add visual feedback for button clicks and form submissions"
+
+49. "Style empty states for cart and product list"
+
+50. "Create consistent color scheme and typography across application"
